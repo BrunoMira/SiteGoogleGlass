@@ -1,0 +1,19 @@
+{
+  "name": "googleglass",
+  "version": "1.0.0",
+  "description": "Exercício sobre a criação de um site do zero (até metade) proposto pelo canal https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoMira/SiteGoogleGlass.git"
+  },
+  "author": "Bruno Mira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoMira/SiteGoogleGlass/issues"
+  },
+  "homepage": "https://github.com/BrunoMira/SiteGoogleGlass#readme"
+}
