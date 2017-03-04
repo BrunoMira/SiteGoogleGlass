@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face{
+  font-family: 'FontLogo';
+  src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+p{
+  text-align: justify;
+  text-indent: 50px;
+  color: black;
+  margin: 10px;
+}
+p span{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: #606060;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+body{
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Arial, sans-serif;
+}
+div#interface{
+  width: 1200px;
+  margin: -20px auto 0px auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+header#cabecalho{
+  border-bottom: 1px solid #808080;
+  height: 150px;
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+  padding: 0px;
+
+}
+
+header#cabecalho h1{
+  font-family: 'FontLogo', sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:  15pt;
+  color: #808080;
+  padding: 0px;
+  margin-top: 0px;
+  text-indent: 5px;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 70%;
+    top: 80px;
+}
+/* Formatação de Imagens com legendas */
+
+figure.foto-legenda{                    /* conteiner para imagens */
+  position: relative;                 /* torna seus filhos relativos, podendo ajusta-los dentro desse conteiner */
+    border: 8px solid white;          /*  cria uma borda ao redor do conteiner(agrupa img e figcaption) */
+    box-shadow: 1px 1px 4px black;     /* cria uma sombra entorno da borda */
+    display: inline-block;
+}
+
+figure.foto-legenda img{     /* imagens dentro do conteiner */
+  height: 100%;              /*torna a altura da imagens relativa ao tamanho da página */
+  width: 100%;              /* torna a largura da imagens relativa ao tamanho da página */
+}
+
+figure.foto-legenda figcaption{      /* dexcrição de img dentro do conteiner */
+  opacity: 0;
+  position: absolute;                /* torna a posição absoluta dentro do conteiner */
+  top:  0px;                         /* espaçamento dentro do conteiner */
+  background-color: rgba(0, 0, 0, 0.4); /*torna o fundo da legenda preto com transparencia */
+  color: white;                         /* torna a fonte da legenda branca */
+  width: 100%;                          /* o conteúdo da legenda ocupa todo o conteiner */
+  height: 100%;                         /* o conteúdo da legenda ocupa todo o conteiner */
+  padding: 10px;                        /* cria um espaça entre o conteiner e a legenda */
+  box-sizing: border-box;               /* não permite a legenda ultrapaçar a borda */
+  transition: opacity 1s;                /* o efeito de transição de opacidade demora 1 segundo */
+}
+
+figure.foto-legenda:hover figcaption{
+  opacity: 1;
+}
+
+/* Formatação do Menu*/
+
+nav#menu{
+  display: block;
+}
+nav#menu ul{
+  list-style: none;                /* remove os simbolos da lista */
+  text-transform: uppercase;      /* transforma todas as letras em maiúsculas*/
+  position: absolute;             /* Torna a lista relativa à página inteira */
+  top: -20px;                     /*eleva a lista ao top da página*/
+  left: 35%;
+}
+
+nav#menu li{
+  display: inline-block;   /* mostra os blocos em uma mesma linha*/
+
+}
+
+nav#menu a{
+  text-decoration: none;
+  padding: 10px 25px;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+  background-color: #cecece;
+  display: inline-block;
+}
+
+nav#menu a:hover{
+  background-color: #606060;
+  color: white;
+}
+
+nav#menu h1{
+  display: none;   /*para esconder o texto Menu Principal*/
+}
+
+section#corpo{
+  display: flex;
+  width: 60%;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+}
+
+section#corpo-full{
+  display: flex;
+  float: left;
+  padding-right: 15px;
+}
+
+article#notica-principal{
+  margin: 0px 20px;
+  width: 680px;
+}
+article{
+  width: 1180px;
+  margin: auto;
+}
+
+article#notica-principal h2{
+  font-size: 13pt;
+  color: #606060;
+  background-color: #cecece;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px;
+}
+
+article#notica-principal video{
+  margin-left: 15%;
+}
+
+article h2{
+  font-size: 13pt;
+  color: #606060;
+  background-color: #cecece;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px;
+}
+
+header#cabecalho-article {
+  margin-left: -10px;
+
+}
+
+header#cabecalho-article h1{
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-article h2{
+    font-family: 'FontLogo', sans-serif;
+    font-size: 13pt;
+    color: #cecece;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+header#cabecalho-article h3{
+  font-size: 13px;
+  color: #cecece;
+}
+
+header#cabecalho-article h3.direita{
+  font-size: 10px;
+  text-align: right;
+  color: #606060;
+}
+
+
+div#c_tabela{
+  display: flex;
+}
+
+table#tabela-spec{
+  border: 1px solid gray;
+  border-spacing: 0px;
+  margin: auto;
+}
+
+table#tabela-spec caption{
+  color: #888888;
+  font-size: 13pt;
+  font-weight: bolder;
+}
+
+table#tabela-spec caption span{
+  display: block;
+  float: right;
+  font-size: 8pt;
+  margin-top: 8px;
+}
+
+table#tabela-spec td.coluna-esquerda{
+  color: white;
+  font-weight: bolder;
+  background-color: #606060;
+  text-align: right;
+  vertical-align: top;
+  padding: 10px;
+}
+
+table#tabela-spec td.coluna-direita{
+  border: 1px solid gray;
+  color: black;
+  font-size: 12pt;
+  background-color: #cecece;
+  text-align: left;
+  padding: 10px;
+}
+
+aside#lateral{
+  display: block;
+  width: 36%;
+  float: right;
+  margin: 10px;
+
+  background-color: #cecece;
+}
+
+aside#lateral h1{
+  font-family: 'FontLogo', sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin: 10px;
+}
+
+aside#lateral h2{
+  color: white;
+  font-size: 13pt;
+  background-color: #606060;
+  padding: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+
+aside#lateral video{
+  display: flex;
+  margin: auto;
+}
+
+footer#rodape{
+  clear:both;
+  border-top: 1px solid gray;
+}
+
+footer#rodape p{
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
